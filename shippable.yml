@@ -18,8 +18,8 @@ env:
     #secure variable contains values for AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
     - AWS_S3_BUCKET='s3://bucket_name'
     - AWS_S3_REGION='ap-south-1'
-    - secure: HZ3SJWE8Hla9J3ZqKQUJEnoZKKFkqRHnrAGy8iadGZ4KbkZFFAMHEnzL+HmeDURIgdbhoEgtbwt2CtuMp0H59FEhmjOXz0Z1H9PUTThmgHcjJY5d7UDuUu1hG600PgE6Cebhd+oN0uMZS5Ul5xfGJta0hzHFkpFmlIKatV6ClX97BPoAxmz1NhNl/VUVOBmW99QrVtAWMBBi7rw+uSeuoMkg2af86tc16L9fTA2N9Ro3Hh6SlI6hZ4Axz8TBfsWFfQgI75HWJspCHa6pC8P/U7C4SxCtO/7tIJX62aZRoAamzmzFqqRhYnAsDr1wI8pwqd+y5NNeAQxrRwpP8qQEOw==
-
+    - secure: AFbN8VyhHjLaw+T2g95SxL02vZ1kFRVXld9lIGRf2tKaDLPg1575hXN+wFRHXIb5R78z5bynGZMb1XcDwbYlhTizUr7DPD8yyw5pLYOddQBMYfU/r4FAlqVTYqvQhoaKNw1XZut93cB3CwjbR3gU1Vc5y33CIv/mnZqu/0b3nnKOTgBZ4OoQvIQUr8spuNpNeG7GnQ2qBsCEnNaS+qV0+Anp/bA9Y0JBVGhzxJghQ+2ZrqQ+jzgE+GZXZDqilqEllEKpbCTk7WiTqg2WjApet/2BM8UodPpt+meCye6l9+kP6nOoirKYuKVmleoZdgkBkLDCKFMIu1kn64Kgpj35dw==
+    
 build:
 
   # http://docs.shippable.com/ci/shippableyml/#ci
