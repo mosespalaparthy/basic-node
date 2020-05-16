@@ -16,7 +16,7 @@ env:
     - TESTS_LOC_DIR=$SHIPPABLE_REPO_DIR/tests
     - MOD_LOC=$SHIPPABLE_REPO_DIR/node_modules/.bin/
     #secure variable contains values for AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
-    - secure: pQF92clLdf+vKd4VE9r4iwHAFazonVX4EjbDSiqUN01lMBnzkfWUc2BS1hXSlguhlB/Vm0nwQrPUmJpr0ycX3mJ2A/Fw0AZIM0tO6cmZJxcV6kiIahdYN4X5P5sliVirR8i5zmOEEyIjQjgfvmfxaOUpr1HvZJqY0zGYHZLEkkgzqzZOXTW3XaXaEMf39i0sWyogbtock1j7OncAJrnfZMULSDFhqHn9tQyadJKrm4QNN01h6vgmKWSj9gX7g+xeKesdx2jotd/0sylnd1YiE3ftGL5ID53OnqEDWaP9r1hRfb3dRI2cknVEax0L1W2fyXIdmDPuboKkXiPLFfv7EA==
+    - secure: HZ3SJWE8Hla9J3ZqKQUJEnoZKKFkqRHnrAGy8iadGZ4KbkZFFAMHEnzL+HmeDURIgdbhoEgtbwt2CtuMp0H59FEhmjOXz0Z1H9PUTThmgHcjJY5d7UDuUu1hG600PgE6Cebhd+oN0uMZS5Ul5xfGJta0hzHFkpFmlIKatV6ClX97BPoAxmz1NhNl/VUVOBmW99QrVtAWMBBi7rw+uSeuoMkg2af86tc16L9fTA2N9Ro3Hh6SlI6hZ4Axz8TBfsWFfQgI75HWJspCHa6pC8P/U7C4SxCtO/7tIJX62aZRoAamzmzFqqRhYnAsDr1wI8pwqd+y5NNeAQxrRwpP8qQEOw==
 
 build:
 
