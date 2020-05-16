@@ -37,15 +37,13 @@ build:
   # http://docs.shippable.com/ci/shippableyml/#on_success
   on_success:
     - aws s3 sync $SHIPPABLE_BUILD_DIR $AWS_S3_BUCKET --region $AWS_S3_REGION
+    - script: echo "SUCCESS"
 
     
 # Integrations are used to connect external resources to CI
 # http://docs.shippable.com/integrations/overview/
 integrations:
-  deploy:
-    - integrationName: aws-builder-creds
-      type: aws
-
+  
   # http://docs.shippable.com/ci/shippableyml/#notifications
   notifications:
   # turning of email for PR builds, get notified only on failure and change in status
