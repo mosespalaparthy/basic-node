@@ -16,6 +16,8 @@ env:
     - TESTS_LOC_DIR=$SHIPPABLE_REPO_DIR/tests
     - MOD_LOC=$SHIPPABLE_REPO_DIR/node_modules/.bin/
     #secure variable contains values for AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+    - AWS_S3_BUCKET='my_bucket'
+    - AWS_S3_REGION='ap-south-1'
     - secure: pQF92clLdf+vKd4VE9r4iwHAFazonVX4EjbDSiqUN01lMBnzkfWUc2BS1hXSlguhlB/Vm0nwQrPUmJpr0ycX3mJ2A/Fw0AZIM0tO6cmZJxcV6kiIahdYN4X5P5sliVirR8i5zmOEEyIjQjgfvmfxaOUpr1HvZJqY0zGYHZLEkkgzqzZOXTW3XaXaEMf39i0sWyogbtock1j7OncAJrnfZMULSDFhqHn9tQyadJKrm4QNN01h6vgmKWSj9gX7g+xeKesdx2jotd/0sylnd1YiE3ftGL5ID53OnqEDWaP9r1hRfb3dRI2cknVEax0L1W2fyXIdmDPuboKkXiPLFfv7EA==
 
 build:
@@ -35,7 +37,7 @@ build:
  
  
   on_success:
-    - aws s3 sync $SHIPPABLE_BUILD_DIR "s3://bucket_name" --region "ap-south-1"
+    - aws s3 sync $SHIPPABLE_BUILD_DIR $AWS_S3_BUCKET --region $AWS_S3_REGION
 
     
 
