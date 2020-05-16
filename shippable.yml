@@ -16,7 +16,7 @@ env:
     - TESTS_LOC_DIR=$SHIPPABLE_REPO_DIR/tests
     - MOD_LOC=$SHIPPABLE_REPO_DIR/node_modules/.bin/
     #secure variable contains values for AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
-    - AWS_S3_BUCKET='s3://bucket_name'
+    - AWS_S3_BUCKET='s3://mybucket_name'
     - AWS_S3_REGION='ap-south-1'
     - secure: AFbN8VyhHjLaw+T2g95SxL02vZ1kFRVXld9lIGRf2tKaDLPg1575hXN+wFRHXIb5R78z5bynGZMb1XcDwbYlhTizUr7DPD8yyw5pLYOddQBMYfU/r4FAlqVTYqvQhoaKNw1XZut93cB3CwjbR3gU1Vc5y33CIv/mnZqu/0b3nnKOTgBZ4OoQvIQUr8spuNpNeG7GnQ2qBsCEnNaS+qV0+Anp/bA9Y0JBVGhzxJghQ+2ZrqQ+jzgE+GZXZDqilqEllEKpbCTk7WiTqg2WjApet/2BM8UodPpt+meCye6l9+kP6nOoirKYuKVmleoZdgkBkLDCKFMIu1kn64Kgpj35dw==
     
@@ -33,7 +33,7 @@ build:
     - $MOD_LOC/istanbul --include-all-sources cover -root "$SHIPPABLE_REPO_DIR/routes" $SHIPPABLE_REPO_DIR/node_modules/mocha/bin/_mocha -- -R spec-xunit-file --recursive "$TESTS_LOC_DIR/**/*.spec.js"
     - $MOD_LOC/istanbul report cobertura --dir $CODE_COVERAGE_DIR
     - popd
-    
+   
   # http://docs.shippable.com/ci/shippableyml/#on_success
   on_success:
     - aws s3 sync $SHIPPABLE_BUILD_DIR $AWS_S3_BUCKET --region $AWS_S3_REGION
