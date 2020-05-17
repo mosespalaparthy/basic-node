@@ -18,7 +18,7 @@ env:
     #secure variable contains values for AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
     - AWS_S3_BUCKET='s3://mybucket_name'
     - AWS_S3_REGION='ap-south-1'
-    - secure: VSpN0hvVJS57etCpsnjEMegRUdyzF2pDtuMBNh4DBQuC/aMomQc5QimOk37aWvT1i2jKQ2eRPlQQLM6dkrv3mW255dnTJ1Q+Dg9qKMTH5IUpvqGLxmo+2bcoNnpWTAdcsirOzLAQNqI20X50jNLnQRzkTqtbwjj02j3pUeNiypITPg4kVzAAgou1bcmIle3e8s/INdC8TAmd6sgdWUox5ufotUt0xV5nAcvHFz6F047nddlZBbDUBZxAZuxg/8jtbULGjWhuOgAJFI/M3L+YvUdRQu64Hk4AvtV+thxsfkp3qmiiKFtPXuDWPfM/MNSG89GxEuE1bJ6aYieHSUtz1A==
+    - secure: edfYPWcHDqIb0IjPcPmPXL546H9N/0TsreHXrlmCTmlL3INWMAAKhkGzdnVe5Q/kJL/jLJjc9dz0r8JfTCFh8UAj+am+/8Hu+OASWeVf3C26Rr/5DW4LMumxlo1Pw7+1khkQg3iR2j2uv6/BpvS1ncSfrMSliAY+tR0CJCHFkNDJdwISB/ldjnTe/I3SLmud5bidT+1YBbzxC4rUmDMhuNFOw7l7YmxmRwcRFdld6DxYFrAzVZeaTu4hV2HphTx/mJV9gWRpmdAYLs1PerFSEYcT5dm2SAcNCxtyhjayPCNo/C5RLt5z02z38zB6zPJJ6Shhstlq2KsveJ5W5N1gsw==
     
 build:
 
